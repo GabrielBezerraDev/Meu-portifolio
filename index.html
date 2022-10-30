@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilos.css">
+    <link rel="stylesheet" href="./src/css/rolagem.css">
+
+    <title>Mini Portfólio</title>
+  </head>
+  <body>
+    <video autoplay muted loop id="retro">
+      <source src="./src/imagens/retrowave.mp4" type="video/mp4">
+    </video>
+      <main class="krl novo formato">
+            <nav class="krl novo">
+                  <ul>
+                    <div onclick="projeto1()">
+                      <li class ="projeto"  id ="formulario">Formulário</li>
+                    </div>
+                      <div onclick="projeto2()">
+                        <li class ="projeto"  id ="catalogos">Catálogos</li>
+                      </div>
+                      <div onclick="projeto3()">
+                        <li class ="projeto"  id ="jogo-de-cartas">Jogo de cartas</li>
+                      </div> 
+                    </ul>
+            </nav>
+              <section class="krl novo">
+                <form method="post" action="">
+                  <div class="amostra mostrar" id = "amostra1">
+                      <h4> Meu Formulário</h4>
+                      <label for = 'nome' class="teste2">Nome
+                        <input type="text" id="nome"required placeholder="Insira o seu nome">
+                      </label>
+                      <br>
+                      <label for='Sobrenome' class="teste2">Sobrenome
+                        <input type="text" id="sobrenome" required placeholder="Insira o seu sobrenome">
+                      </label>
+                      <br>
+                      <label for="Email" class="teste2"> Email
+                        <input type="email" id="Email" required placeholder="example@gmail.com">
+                      </label>
+                      <br>
+                      <label for="usuario" class="teste2">Usuário
+                        <input type="text" id="usuario" required>
+                      </label>
+                      <br>
+                      <label for="senha" class="teste2"> Senha
+                        <input type="password" id="senha" required>
+                      </label>
+                      <br>
+                      <label for="senha" class="teste2"> Confirmar senha
+                        <input type="password" id="senha" required>
+                      </label>
+                      <br>
+                      <label class="teste2" for="estados">Seu estado
+                        <select name="estados">
+                          <optgroup label="Norte">
+                            <option>Amazonas</option>
+                          </optgroup>
+                          <optgroup label="Nordeste">
+                            <option>Ceára</option>
+                          </optgroup>
+                          <optgroup label="Centro-Oeste">
+                            <option>Brasília</option>
+                          </optgroup>
+                          <optgroup label="Sudeste">
+                            <option>São Paulo</option>
+                          </optgroup>
+                          <optgroup label="Sul">
+                            <option>Santa Catarina</option>
+                          </optgroup>
+                        </select>
+                        <br>
+                  </label>
+                    <br>
+                      <label for="masculino" class="teste"><p2>Masculino<input type="radio" id="masculino" name="genero"></p2></label>
+                      <label for="Feminino" class="teste"><p2>Feminino<input type="radio" id="Feminino" name="genero"></p2></label>
+                      <label for="Outros" class="teste"><p2>Outros<input type="radio" id="Outros" name="genero"></p2></label>
+                      <div  class="botao">
+                        <button type="submit"><b>Cadastrar</b></button>
+                      </div>
+                   </div>
+                </form>
+                <div class = "amostra escolhido"   id = "amostra2">
+                  <h> meus Catálogos</h>
+                </div>
+                <div class = "amostra escolhido"  id = "amostra3">
+                  <h>meu gameCard</h>
+                </div>
+              </section>
+              <footer class="krl novo"></footer>
+      </main>
+    <main class="cartao formato" id="move">
+      <div class="minhas-informacoes">
+        <div class='clica' onclick="coin()">
+          <img src="./src/imagens/Pixilart - Share & Create Art Online.gif" id="moeda"/> 
+        </div>
+        <b><p1 class='projetos'>Meus projetos</p1></b>
+        <img src="./src/imagens/perfil.jpg" alt="foto de perfil" class="perfil"/>
+        <div class = 'titulos'>
+          <h1 class="nome">Gabriel Bezerra de Jesus</h1>
+          <h2 class="cargo">Desenvolvedor Frontend Júnior</h2>
+        </div>
+      </div>
+
+      <div class="conteudo">
+        <ul class="abas">
+          <li class="aba selecionado" id="sobre-mim">
+            <img src="./src/imagens/sobre.gif" alt="ícone de sobre mim" />
+          </li>
+          <li class="aba" id="rede-social">
+            <img src="./src/imagens/coracao.gif" alt="ícone de redes sociais" />
+          </li>
+        </ul>
+
+        <div class="informacoes-abas">
+          <div class="informacao selecionado" id="informacao-sobre-mim">
+            <h3 class="sub-titulo">Sobre</h3>
+
+            <div class="descricao">
+              <p>Oi! meu nome é Gabriel Bezerra de Jesus, seja bem-vindo(a)!</p>
+
+              <p>
+                Sou uma pessoa apaixonado pela programação. Sempre tive o sonho de trabalhar com programação e
+                atualmente comecei a colocar esse sonho em prática estudando
+                <span>HTML, CSS e JavaScript</span>. 
+              </p>
+            </div>
+          </div>
+          <div class="informacao" id="informacao-rede-social">
+            <h3 class="sub-titulo">Minhas redes</h3>
+
+            <ul class="redes-sociais">
+                <li>
+                    <a href="https://docs.google.com/document/d/1y29qJelptW_dI6KlpK9LLGVusSQfaGkfQ6sTuH9CJcM/edit?usp=sharing" target="_blank" class="curriculo">Currículo</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/company/dev-em-dobro/" target="_blank" class="linkedin">LinkedIn</a>
+                </li>
+                <li>
+                    <a href="https://github.com/devemdobro" target="_blank" class="github">GitHub</a>
+                </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </main>
+    <script src="js/index.js"></script>
+  </body>
+</html>
