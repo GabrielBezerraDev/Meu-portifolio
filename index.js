@@ -41,97 +41,26 @@ function coin() {
 }
 
 }   
+/* Refatoração do código das Abas */
+let projetos = document.querySelectorAll('.projeto')
 
-/* O CÓDIGO QUE DEU CERTO: */
-function projeto1() {
-    let projeto11 = document.getElementById('formulario');
-    let projeto1 = document.querySelectorAll('.amostra');
-    if 
-        (projeto11.classList.contains('mostrar')) {
-            return;}
-    else
-         {
-         projeto1[1].style.display = 'none';
-         projeto1[2].style.display = 'none';
-         projeto1[0].style.display = 'block';
-};
-}
-
-function projeto2 () {
-    let projeto22 = document.getElementById('catalogos');
-    let projeto1 = document.querySelectorAll('.amostra');
-    if 
-        (projeto22.classList.contains('mostrar')) {
-            return;}
-    else 
-         {
-          projeto1[0].style.display = 'none';
-          projeto1[2].style.display = 'none';
-          projeto1[1].style.display = 'block';
+projetos.forEach(projeto => { 
+    projeto.addEventListener('click' , () => {
+        if(projeto.classList.contains('mostrar')){
+            return;
         }
-
-        }
-
-function projeto3() {
-    let projeto33 = document.getElementById('catalogos');
-    let projeto1 = document.querySelectorAll('.amostra');
-    if 
-        (projeto33.classList.contains('mostrar')) {
-                return;}
-    else
-        {
-        projeto1[0].style.display = 'none';
-        projeto1[1].style.display = 'none';
-        projeto1[2].style.display = 'block';
-    }
-}
-
-
-/* TENTATIVAS DO CÓDIGO:
-function teste() {
-    let mundaca = document.getElementsByClassName('projeto') 
-            for (let i = 0; i < mundaca.length; i++) {
-            [mundaca[i].style.display = 'block']
-}
-}
-*/
-
-
-
-
-/*
-function projeto1() {
-        if (projeto1.style.di(block)) {
-            return;} 
         else {
-            projeto1.style.display = block;
-            projeto2.style.display = none;
-            projeto3.style.display = none;
+            mudarDeAba(projeto)
         }
-}
-
-function projeto2() {
-    if (projeto2.style.display(block)) {
-        return;} 
-    else {
-        projeto1.style.display = none;
-        projeto2.style.display = block;
-        projeto3.style.display = none;
-    }
-}
-
-function projeto3() {
-    if (projeto3.style.display(block)) {
-        return;} 
-    else {
-        projeto1.style.display = none;
-        projeto2.style.display = none;
-        projeto3.style.display = block;
-    }
-}
-*/
-
-
-
+function mudarDeAba(secao) {
+    let tirarMostrar = document.querySelector('.trabalho.esconder.mostrar');
+    tirarMostrar.classList.remove('mostrar')
     
+    let botarMostrar = `clica-${secao.id}`;
+    let aparecer = document.getElementById(botarMostrar);
+    aparecer.classList.add('mostrar');
+
+}
+    } )
+})
 

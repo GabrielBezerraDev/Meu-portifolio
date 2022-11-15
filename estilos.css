@@ -255,17 +255,10 @@ main footer.krl {
 }
 
 
-.escolhido {
-    display: none;
-}
-
-.mostrar {
-    display: block;
-}
 
 /* Fazendo o formulário */
 
-#amostra1 {
+#amostra {
     border:#e126d9 solid 2px;
     margin: 10px 0px 0px 0px;
     padding-left: 12px;
@@ -322,4 +315,12 @@ button:hover {
 
 .formato {
     zoom: 90%;
+}
+
+.esconder {
+    display: none;
+}
+
+.mostrar {
+    display: block;
 }
